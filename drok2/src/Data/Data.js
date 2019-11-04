@@ -23,10 +23,8 @@ render () {
 		});
 
 		let result = await response.json();
-		result.message = function () {
-			alert('Пользователь сохранен')
-		}
-		user.message()
+		alert(result.message);
+		
   	}
 	return (
 		
