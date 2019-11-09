@@ -1,7 +1,10 @@
 .quiz {
 	font-weight: 900;
 }
-#place {
+.place {
+	display: flex;
+	flex-direction: column;
+	width: 300px;
 	background-color: inherit;
 	border: none;
 	border-bottom: 1px solid black;
