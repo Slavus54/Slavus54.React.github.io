@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './Car.css';
 
 export default class Car extends Component {
+	
 	render() {
 		return (
 			<div className="cars">

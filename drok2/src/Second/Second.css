@@ -1,0 +1,21 @@
+.second {
+	background-color: inherit;
+	color: grey;
+}
+#butBack {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	width: 120px;
+	height: 50px;
+	background-color: grey;
+	color: white;
+	border: none;
+	border-radius: 25px;
+	box-shadow: 0px 0px 5px grey;
+	margin-left: 45%;
+}
+#butBack:focus {
+	outline: none;
+}
