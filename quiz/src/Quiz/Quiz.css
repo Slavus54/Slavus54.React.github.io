@@ -1,15 +1,23 @@
 .quiz {
 	font-weight: 900;
+	display: block;
 }
 .place {
 	display: flex;
 	flex-direction: column;
 	width: 300px;
+	color: #666666;
 	background-color: inherit;
 	border: none;
 	border-bottom: 1px solid black;
 	margin-top: 10%;
 	margin-left: 6%;
+}
+.place:invalid {
+    background-color: #51ffd9;
+}
+#place1 {
+	margin-top: 20%;
 }
 #but1 {
 	width: 120px;
@@ -23,3 +31,10 @@
 	margin-top: 10%;
 	margin-left: 5%;
 }
+#but1:hover {
+	cursor: pointer;
+}
+#but1:focus {
+	outline: none;
+}
+
