@@ -8,6 +8,7 @@ import Data from './Data/Data';
 import All from './All/All';
 import Second from './Second/Second';
 import Users from './Users/Users';
+import Products from './Products/Products';
 import {Route, Link} from 'react-router-dom';
 
 export default function App () {
@@ -53,12 +54,14 @@ export default function App () {
  	<Link to={{pathname: '/third'}}>3</Link>
  	<Link to={{pathname: '/four'}}>4</Link>
  	<Link to={{pathname: '/users'}}>5</Link>
+ 	<Link to={{pathname: '/products'}}>6</Link>
  	</nav>
  	<Route path="/" exact/>
     <Route path="/second" component={Second} exact/>
  	<Route path="/third" component={Data} exact/>
  	<Route path="/four" component={Cars} exact/>
  	<Route path="/users" component={Users} exact/>
+ 	<Route path="/products" component={Products} exact/>
  	</All>
 );
   

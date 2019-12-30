@@ -6,6 +6,12 @@
 	background-color: inherit;
 	color: blue;
 }
+.girl {
+	color: red;
+}
+.girl_active {
+	color: green;
+}
 .users-main li {
 	list-style: none;
 	margin-top: 5%;
@@ -14,6 +20,16 @@
 .users-main li:nth-child(1) {
 	margin-left: -5%;
 }
+.inputs {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	margin-top: 7%;
+}
+.inputs li {
+	margin-left: 120%;
+}
+
 #butBackUsers {
 	position: relative;
 	display: block;
