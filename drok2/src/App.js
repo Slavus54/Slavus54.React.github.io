@@ -9,6 +9,7 @@ import All from './All/All';
 import Second from './Second/Second';
 import Users from './Users/Users';
 import Products from './Products/Products';
+import Counter from './Counter/Counter';
 import {Route, Link} from 'react-router-dom';
 
 export default function App () {
@@ -55,6 +56,7 @@ export default function App () {
  	<Link to={{pathname: '/four'}}>4</Link>
  	<Link to={{pathname: '/users'}}>5</Link>
  	<Link to={{pathname: '/products'}}>6</Link>
+ 	<Link to={{pathname: '/counter'}}>7</Link>
  	</nav>
  	<Route path="/" exact/>
     <Route path="/second" component={Second} exact/>
@@ -62,6 +64,7 @@ export default function App () {
  	<Route path="/four" component={Cars} exact/>
  	<Route path="/users" component={Users} exact/>
  	<Route path="/products" component={Products} exact/>
+ 	<Route path="/counter" component={Counter} exact/>
  	</All>
 );
   
