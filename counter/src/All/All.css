@@ -1,0 +1,7 @@
+.main {
+	position: relative;
+	display: none;
+	justify-content: center;
+	flex-direction: column;
+	height: 600px;
+}

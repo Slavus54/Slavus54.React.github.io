@@ -1,0 +1,73 @@
+.App {
+  text-align: center;
+ 
+}
+.count {
+  font-size: 28px;
+  margin-left: 49%;
+}
+.but-main {
+  text-align: center;
+  justify-content: center;
+  height: 30px;
+  width: 100px;
+  color: white;
+  background-color: blue;
+  border: none;
+  border-radius: 10px;
+  margin-top: 0%;
+  margin-left: 46%;
+}
+.but-main:hover {
+  cursor: pointer;
+}
+.but-main:focus {
+  outline: none;
+}
+a {
+  text-decoration: none;
+  font-weight: 700;
+}
+nav a {
+  font-size: 18px;
+  color: blue;
+}
+nav a:focus {
+  font-size: 18px;
+  color: red;
+}
+#root {
+  
+}
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+.goods {
+  color: grey;
+}
+#b1 {
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 14px;
+  border: none;
+  border-radius: 7px;
+  padding: 15px 25px;
+}
+
