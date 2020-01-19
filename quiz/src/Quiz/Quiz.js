@@ -27,7 +27,9 @@ export default class Quiz extends Component {
 				body: JSON.stringify({valu1, valu2, valu3, olga})
 			});
 			var result = await response.json();
+			var url = await response.url;
 			alert(JSON.stringify(result));
+			alert(url);
 			alert(JSON.stringify(olga.name));
 			alert(JSON.stringify(olga.status));
 		}
@@ -67,6 +69,14 @@ export default class Quiz extends Component {
 			rightAnswer.style.color = 'white';
 			alert('You are right!');	 
 		} 
+		const Singleton = new (function () {
+			var rightAnswer = document.getElementById('7');
+			const single = rightAnswer;
+			return function () {
+				alert(single);
+			}
+		})();
+		Singleton();
 	}
 		 
 		return (
