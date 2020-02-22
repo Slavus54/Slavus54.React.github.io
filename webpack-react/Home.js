@@ -1,6 +1,6 @@
 import React, {Fragment} from 'react';
-import Search from '../Search/Search.js';
-import Card from '../Card/Card.js';
+import Search from './Search.js';
+import Card from './Card.js';
 
 const Home = () => {
 	const cards = new Array(6)
