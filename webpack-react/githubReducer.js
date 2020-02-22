@@ -1,5 +1,5 @@
 import React from 'react';
-import {CLEAR_USERS, GET_REP, GET_USER, SEARCH_USERS, SET_LOADING, GET_VALUE} from '../types.js';
+import {CLEAR_USERS, GET_REP, GET_USER, SEARCH_USERS, SET_LOADING, GET_VALUE} from './types.js';
 
 const GithubReducer = (state, action) =>  {
 	switch(action.type) {
