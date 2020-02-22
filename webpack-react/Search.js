@@ -1,6 +1,6 @@
 import React, {useContext, useState} from 'react';
-import AlertContext from '../context/alert/alertContext.js';
-import GithubContext from '../context/github/githubContext.js';
+import AlertContext from './alertContext.js';
+import GithubContext from './githubContext.js';
 
 const Search = () => {
 	const [value, setValue] = useState('');
