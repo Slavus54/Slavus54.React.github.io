@@ -1,6 +1,6 @@
 import React, {Fragment} from 'react';
 import {Link} from 'react-router-dom';
-import Search from '../Search/Search.js';
+import Search from './Search.js';
 
 const Card = () => {
 	
