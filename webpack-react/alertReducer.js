@@ -1,5 +1,5 @@
 import React from 'react';
-import {SHOW_ALERT, HIDE_ALERT} from '../types.js';
+import {SHOW_ALERT, HIDE_ALERT} from './types.js';
 
 const AlertReducer = (state, action) => {
 	switch(action.type) {
