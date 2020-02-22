@@ -2,7 +2,7 @@ import React, {useReducer} from 'react';
 import GithubContext from './githubContext.js';
 import GithubReducer from './githubReducer.js';
 import axios from 'axios';
-import {CLEAR_USERS, GET_REP, GET_USER, SEARCH_USERS, SET_LOADING, GET_VALUE} from '../types.js';
+import {CLEAR_USERS, GET_REP, GET_USER, SEARCH_USERS, SET_LOADING, GET_VALUE} from './types.js';
 
 const CLIENT_ID = '54a17a8cf1fe8379e2ae';
 const CLIENT_SECRET ='8f6b57cc0cdadb0251641f1b81e22821b57049ab';
