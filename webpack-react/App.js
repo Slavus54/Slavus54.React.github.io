@@ -1,11 +1,11 @@
 import React, {Fragment, Component} from 'react';
 import css from './App.css';
-import Navbar from 'Navbar.js';
+import Navbar from './Navbar.js';
 import {Route, Switch} from 'react-router-dom';
-import Home from 'Home.js';
-import Information from 'Information.js';
-import Profile from 'Profile.js';
-import Alert from 'Alert.js';
+import Home from './Home.js';
+import Information from './Information.js';
+import Profile from './Profile.js';
+import Alert from './Alert.js';
 
 class App extends Component {
 	render () {
