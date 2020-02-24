@@ -1,6 +1,6 @@
 import React, {useContext, useState} from 'react';
-import AlertContext from './alertContext.js';
-import GithubContext from './githubContext.js';
+import AlertContext from '../context/alert/alertContext.js';
+import GithubContext from '../context/github/githubContext.js';
 
 const Search = () => {
 	const [value, setValue] = useState('');
@@ -25,6 +25,7 @@ const Search = () => {
 				return res.json()
 			})
 			.then(data => console.log(data))
+			kol.show(value);
 			//var result = response;
 			//console.log(result)
 		} else {
