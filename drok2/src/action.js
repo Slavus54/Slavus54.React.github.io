@@ -1,4 +1,4 @@
-import {ADD, SUB, NUMBER, CHANGE, DROP} from './actionTypes';
+import {ADD, SUB, NUMBER, CHANGE, DROP, LOAD, PUT, TODOS, SAVE} from './actionTypes';
 
 export function add() {
 	return {
@@ -26,5 +26,27 @@ export function change(event) {
 export function drop() {
 	return {
 		type: DROP
+	}
+}
+export const load = () => {
+	return {
+		type: LOAD
+	}
+}
+export const putData = (data) => {
+	return {
+		type: PUT,
+		payload: data
+	}
+}
+export const addTodos = (event) => {
+	return {
+		type: TODOS,
+		payload: event.target.value
+	}
+}
+export const saveTodos = () => {
+	return {
+		type: SAVE
 	}
 }

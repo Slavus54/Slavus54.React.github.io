@@ -1,9 +1,11 @@
-import {ADD, SUB, NUMBER, CHANGE, DROP} from './actionTypes';
+import {ADD, SUB, NUMBER, CHANGE, DROP, TODOS, SAVE} from './actionTypes';
 
 const initialState = {
 	count: 5,
 	right: 'Ponasenkov',
-	who: 'Гений: '
+	who: 'Гений: ',
+	term: '',
+	items: []
 }
 export default function rootReducer (state = initialState, action) {
 	switch(action.type) {
@@ -31,6 +33,12 @@ export default function rootReducer (state = initialState, action) {
 			count: action.drop,
 			right: 'Sokolov',
 			who: 'Дешёвка и шваль: '
+		}
+		case TODOS: return {
+			term: action.payload
+		}
+		case SAVE: return {
+			items: [...state.items, state.term]
 		}
 		default: return state
 	}

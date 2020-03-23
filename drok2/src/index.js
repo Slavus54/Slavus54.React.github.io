@@ -5,6 +5,8 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import {BrowserRouter} from 'react-router-dom';
 import {createStore, applyMiddleware} from 'redux';
+import createSagaMiddleware from 'redux-saga';
+import {watchLoadData} from './sagas.tsx';
 import {Provider} from 'react-redux';
 import rootReducer from './redux';
 
@@ -20,13 +22,15 @@ import rootReducer from './redux';
 	
 // }
 // ES6
+const SagaMiddleware = createSagaMiddleware();
 const loggerMiddleware = store => next => action => {
 	const result = next(action);
 	console.log(result);
 	console.log(store.getState());
 	return result;
 }
-const store = createStore(rootReducer, applyMiddleware(loggerMiddleware));
+const store = createStore(rootReducer, applyMiddleware(loggerMiddleware, SagaMiddleware));
+SagaMiddleware.run(watchLoadData);
 const application = (
 		<Provider store={store}>
 		<BrowserRouter>
