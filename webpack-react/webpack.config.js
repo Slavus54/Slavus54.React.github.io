@@ -22,6 +22,15 @@ module.exports = {
 			{
 				test: /\.css$/,
 				use: ['style-loader', 'css-loader']
+			},
+			{
+				test: /\.(png|jpg|ttf|eot)$/,
+				exclude: /node_modules/,
+				loader: 'url-loader'
+			}, 
+			{
+				test: /\.tsx?$/, 
+				loader: 'ts-loader'
 			}
 		]
 	},
@@ -32,7 +41,7 @@ module.exports = {
 	],
 	resolve: {
     	modules: ['node_modules'],
-    	extensions: [".js", ".json", ".jsx", ".css"]
+    	extensions: [".js", ".json", ".jsx", ".css", ".ts", ".tsx"]
   	},
   	devServer: {
     	clientLogLevel: 'silent'
