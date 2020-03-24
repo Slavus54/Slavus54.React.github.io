@@ -1,0 +1,41 @@
+@import '~antd/dist/antd.css';
+
+li {
+    list-style: none;
+}
+body {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 1100px;
+    height: 500px;
+    border: 1px solid red;
+}
+h1 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+h3 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+.Todos {
+    position: absolute;
+    margin-top: 15%;
+}
+#result {
+    text-align: center;
+    width: 300px;
+    margin-top: 20%;
+    border: 0.5px dashed grey;
+    word-wrap: break-word;
+}
