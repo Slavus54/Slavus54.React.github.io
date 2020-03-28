@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './Todos.css';
-import List from './List';
 
 export default class Todos extends Component {
   constructor(props) {
@@ -29,7 +28,11 @@ export default class Todos extends Component {
           <input value={this.state.term} onChange={this.onChange} />
           <button>Submit</button>
         </form>
-        <List items={this.state.items} />
+        <ul>
+    {
+      this.state.items.map((it, i) => <li key={i}>{it}</li>)
+    }
+  </ul>
       </div>
     );
   }
