@@ -10,7 +10,10 @@ const App = () => {
   const onSubmit = (e) => {
       e.preventDefault();
       let place = document.getElementById('result');
-      place.innerHTML += `<li>${data}</li>`+`<br />`
+      const li = document.createElement('li');
+      li.classList.add('todo');
+      li.innerHTML = `<p><InfoCircleOutlined />${data}</p>`;
+      place.appendChild(li)
   }
   // onDelete () {
 	// // let NewItem = this.state.items.filter(el => {
